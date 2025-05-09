@@ -66,6 +66,7 @@ namespace margelo::nitro::image {
       prototype.registerHybridMethod("calculateFibonacciAsync", &HybridTestObjectSwiftKotlinSpec::calculateFibonacciAsync);
       prototype.registerHybridMethod("wait", &HybridTestObjectSwiftKotlinSpec::wait);
       prototype.registerHybridMethod("promiseThrows", &HybridTestObjectSwiftKotlinSpec::promiseThrows);
+      prototype.registerHybridMethod("promiseReturnsNull", &HybridTestObjectSwiftKotlinSpec::promiseReturnsNull);
       prototype.registerHybridMethod("awaitAndGetPromise", &HybridTestObjectSwiftKotlinSpec::awaitAndGetPromise);
       prototype.registerHybridMethod("awaitAndGetComplexPromise", &HybridTestObjectSwiftKotlinSpec::awaitAndGetComplexPromise);
       prototype.registerHybridMethod("awaitPromise", &HybridTestObjectSwiftKotlinSpec::awaitPromise);

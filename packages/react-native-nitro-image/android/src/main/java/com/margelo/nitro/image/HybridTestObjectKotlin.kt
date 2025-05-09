@@ -152,6 +152,12 @@ class HybridTestObjectKotlin: HybridTestObjectSwiftKotlinSpec() {
         }
     }
 
+    override fun promiseReturnsNull(): Promise<Double?> {
+        return Promise.async {
+            null
+        }
+    }
+
     override fun awaitAndGetPromise(promise: Promise<Double>): Promise<Double> {
         return Promise.async {
             val result = promise.await()

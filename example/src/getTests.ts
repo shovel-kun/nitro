@@ -766,6 +766,11 @@ export function getTests(
         'Error: Promise throws :)'
       )
     ),
+    createTest('promiseReturnsNull()', async () =>
+      (await it(() => testObject.promiseReturnsNull()))
+        .didNotThrow()
+        .equals(null)
+    ),
     createTest('twoPromises can run in parallel', async () =>
       (
         await it(async () => {
